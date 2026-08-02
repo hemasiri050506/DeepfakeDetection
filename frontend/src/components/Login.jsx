@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 function Login() {
   return (
     <div className="min-h-screen bg-[#05080a] flex items-center justify-center px-4">
@@ -44,7 +45,7 @@ function Login() {
 
         <div className="flex justify-between mt-6 text-xs text-[#3d4d51]">
           <span>
-            No account? <span className="text-[#22d3ee] cursor-pointer">Register</span>
+            No account? <Link to="/register" className="text-[#22d3ee]">Register</Link>
           </span>
           <span className="flex items-center gap-1">🔒 TLS secured</span>
         </div>
